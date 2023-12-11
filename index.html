@@ -3,17 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard Warrior</title>
-    <!-- CSS -->
+    <title>
+        Keyboard Warrior
+    </title>
+    <!--CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-     <!-- favicon 
-     <link rel="icon" type="image/x-icon" href="./assets/images/favicon/32x32.png">-->
+    <!-- favicon -->
 </head>
+
 <body>
+
+  <section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <!-- SITE BANNER REPLACE -->
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <h1>Keyboard Warrior</h1>
+
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="https://github.com/RubinoD1" target="_blank" rel="noopener noreferrer" class="navbar-item is-active">
+                Profile
+              </a>
+              <!-- ADD REPO LINK -->
+              <a class="navbar-item">
+                Repo
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- Hero content: will be in the middle -->
+    <div id="home-btns" class="hero-body hidden">
+        <div class="buttons are-large">
+            <button id="start-btn" class=" button is-danger">
+                Start
+            </button>
+            <button id="settings-btn" class=" button is-link">
+                Settings
+            </button>
+          </div>
+      </div>
+
+      
+      
+    </div>
+  </section>
+
+   <!--CARDS-->
+   <div class="columns">
+       
+    <div class="column card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./assets/images/Shakespearen-.jpeg" alt="Shakespeare image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title is-justify-content-center">
+          Shakespeare
+        </p>
+      </header>
+      <div class="card-content">
+        <p class="title">
+          “Our doubts are traitors, And make us lose the good we oft might win, By fearing to attempt.”
+        </p>
+        <p class="subtitle">
+          Shakespeare
+        </p>
+      </div>
+      <footer class="card-footer">
+       <button id="start-btn" class="card-footer-item button is-info">
+          Select
+      </button>
+      </footer>
+    </div>
+
+    <div class="column card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./assets/images/friedrich-nietzsche.jpg" alt="Friedrich Nietzsche image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title is-justify-content-center">
+          Friedrich Nietzsche
+        </p>
+      </header>
+      <div class="card-content">
+        <p class="title">
+          “If we possess our why of life we can put up with almost any how.”
+        </p>
+        <p class="subtitle">
+          Friedrich Nietzsche
+        </p>
+      </div>
+      <footer class="card-footer">
+        <button id="start-btn" class="card-footer-item button is-info">
+          Select
+      </button>
+      </footer>
+    </div>
+
+    <div class="column card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="./assets/images/mystery.jpg" alt="Random image">
+        </figure>
+      </div>
+      <header class="card-header">
+        <p class="card-header-title is-justify-content-center">
+          Mystery
+        </p>
+      </header>
+      <div class="card-content">
+        <p class="title">
+          “Without pain, without sacrifice, we would have nothing.”
+        </p>
+        <p class="subtitle">
+          Fight Club
+        </p>
+      </div>
+      <footer class="card-footer">
+        <button id="start-btn" class="card-footer-item button is-info">
+          Select
+      </button>
+      </footer>
+    </div>
+
     
+  </div>
 
-
-  <!-- JS file -->
-  <script src="./assets/js/script.js"></script>
+<!-- JS file -->  
+<script src="./assets/js/logic.js"></script> 
 </body>
-</html>
+
