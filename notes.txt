@@ -1,25 +1,19 @@
 To-DO 
 -------
 #1 btn event listeners for start and settings 
-#2 Three profile cards for selectable quote themes (shakesphere, Nietzsche, Goobly Gook)
 #3 Make arrays for quotes 
   - shuffle order once selected 
   - output value and set to inner.html 
+#4 Main content quote layout and UI (score / accuracy% / quotes left)
 
 
 Today 
 
-- start selection cards for quotes
-- delete btns instead of hiding? or move cards into hero section?
 
 
 
 
+NOTES
+--------
+- logo 460 x 120 (Bulma default logo)
 
-CARD NOTES 
--------
-Image 
-Name 
-quote sample "..." with italic font or another fony style 
-  - Bulma has in the card section of their guide a nice sample of quotes being used. 
-Select button
