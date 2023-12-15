@@ -2,6 +2,7 @@ const startBTN = document.getElementById("start-btn");
 const settingsBTN = document.getElementById("settings-btn");
 const homeBTNs = document.getElementById("home-btns");
 const cards = document.getElementById("cards");
+const quote = document.getElementById("quote");//main content
 
 
 //btn event listeners 
@@ -16,4 +17,13 @@ function startScreen (){
     homeBTNs.remove();
     //uhide qoute selection cards
     cards.classList.remove("hidden");
+}
+
+
+//keyboard input event listener -- check if quote is active THEN trigger check function
+
+
+//main content function
+function quoteCheck(){
+  
 }

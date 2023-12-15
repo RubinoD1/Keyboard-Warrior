@@ -8,6 +8,8 @@ To-DO
 
 
 Today 
+- Main content quote layout and UI (score / accuracy% / quotes left)
+
 
 
 
@@ -16,4 +18,8 @@ Today
 NOTES
 --------
 - logo 460 x 120 (Bulma default logo)
+
+- Progress bar for quotes left: 
+  - will need to manipulate the value of progress bar to update progress (JS). 
+  - remeber to set default value to 0 in the HTML file when testing is done. 
 
