@@ -4,15 +4,18 @@ To-DO
 #3 Make arrays for quotes 
   - shuffle order once selected 
   - output value and set to inner.html 
-#4 Main content quote layout and UI (score / accuracy% / quotes left)
+#5 Improve main site header with banner and better layout.
 
 
 Today 
-- Main content quote layout and UI (score / accuracy% / quotes left)
+
+- SPAN DOES NOT REPLACE A STRING IT MODIFIES IT --- NEED TO CREATE A NEW STRING WITH APPLIED CHANGES???
+  - modify string with style change 
+  - return new string replacing the old. 
 
 
-
-
+- Add a span element to each character of a srtring including spaces 
+  THEN add classes to modify colour of text.
 
 
 NOTES
@@ -23,3 +26,40 @@ NOTES
   - will need to manipulate the value of progress bar to update progress (JS). 
   - remeber to set default value to 0 in the HTML file when testing is done. 
 
+- Quote input checker 
+  - input matches current character: 
+     - Make text character green
+     - Move text position indicator to next character
+     - Update typing accuracy %
+     - 
+  - input does not match cuurent character:
+    - Make text character red
+
+- Qoute current location marker
+ - Increase the font size, make character bold and have a border around location (black spaces will need to be marked somehow). 
+
+
+
+
+
+Iteration for assigning id's to each character in string 
+------
+Goal take a array.value 
+iterate through the string (make sure spaces get assigned) and make each character a child of a parent div
+  - each child element will be assigned a unique id so they can be assigned a class that will modify the text color 
+  - MAKE SURE that by making each character a seperate child the quote is not formatted wrong. 
+
+
+
+
+Sample 1:
+if (i < array[0].textContent.length){ //check if textContent.length works for array strings
+   //create a child element within the HTML div that will act as a parent
+   //the child will be assigned an id "character0" and will be modified later with assigning
+    a specific class that will change the font color to that id based on user input.
+
+
+         //array[0].textContent.charAt(0) 
+   
+}
+-------
