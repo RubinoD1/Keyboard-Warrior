@@ -1,3 +1,11 @@
 .hidden {
-    visibility: hidden;
-  }
+  visibility: hidden;
+}
+
+.incorrect {
+  color: red;
+}
+
+.correct {
+  color: green;
+}

@@ -9,13 +9,20 @@ To-DO
 
 Today 
 
-- SPAN DOES NOT REPLACE A STRING IT MODIFIES IT --- NEED TO CREATE A NEW STRING WITH APPLIED CHANGES???
-  - modify string with style change 
-  - return new string replacing the old. 
+- calculate accuracy % 
+  - when qoute complete save score to array for total % at the end of the game. 
+  - default % text is "TBD" 
+
+- Array for qoutes 
+  - set qoute to array value 
+  - cycle through qoutes (randomize later)
+
+- progress bar uppdates when qoute changes. 
+ - set starting bar value to 0 
 
 
-- Add a span element to each character of a srtring including spaces 
-  THEN add classes to modify colour of text.
+
+
 
 
 NOTES
@@ -42,24 +49,29 @@ NOTES
 
 
 
-Iteration for assigning id's to each character in string 
-------
-Goal take a array.value 
-iterate through the string (make sure spaces get assigned) and make each character a child of a parent div
-  - each child element will be assigned a unique id so they can be assigned a class that will modify the text color 
-  - MAKE SURE that by making each character a seperate child the quote is not formatted wrong. 
+
+JS NOTES 
+-------------
+//Qoute logs for refrence 
+//console.log(quote.textContent); //quote text content
+//console.log(quote.textContent.charAt(0)); //get specefic character
+//console.log(quote.textContent.length); //qoute length
+-------------- 
 
 
+Keyboard info- logs relevant info 
+----
 
+  const keyCodes = () => {
+  document.addEventListener('keydown', function (e) {
+    console.log(
+      'keyCodeDEP', e.which,
+      'key', e.key,
+      'code', e.code,
+      'location', e.location
+    );
+  });
+};
+keyCodes();
 
-Sample 1:
-if (i < array[0].textContent.length){ //check if textContent.length works for array strings
-   //create a child element within the HTML div that will act as a parent
-   //the child will be assigned an id "character0" and will be modified later with assigning
-    a specific class that will change the font color to that id based on user input.
-
-
-         //array[0].textContent.charAt(0) 
-   
-}
--------
+----------
