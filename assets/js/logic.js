@@ -3,11 +3,20 @@ const settingsBTN = document.getElementById("settings-btn");
 const homeBTNs = document.getElementById("home-btns");
 const cards = document.getElementById("cards");
 const quote = document.getElementById("quote");//main content
+const accuracyHTML = document.getElementById("accuracy");
 
 let str = "I am a test.";
 //console.log(str);
 let position = 0; //tracks current qoute position 
 let length = 0; //qoute length --MAY NOT BE NEEDED 
+let accuracy = "--";//-- by default -- changed after first user input (qoute)
+let correct = 0;//tracks correct inputs
+
+
+//How to modify value bar
+//NEED to calculate current qoutes # with total and get percentage -- THEN TEST
+document.getElementById("progress-bar").setAttribute("value", "0");
+
 
 
 
@@ -42,9 +51,6 @@ document.addEventListener('keydown', (event) => {
 })
   
   
-
-
-
 //TO-DO: to array value for string
 function populateText(str){
     let tracker = 0;
@@ -59,24 +65,37 @@ function populateText(str){
         length = length +1;//log qoute length 
         //console.log(tracker);
     })
+    //ADD border class to character0 id || set timer that changes style
+    document.getElementById("character0").classList.add("border", "blink");
+    //TO-DO: position, accuracy and correct reset values
 }
 
 //Keyboard input filter for quotes 
 function inputFilter(event){
     //NEED to track current position and increase after input
     let test = event.key;
-    console.log(document.getElementById("character" + `${position}`).innerHTML, event.key, "filter");
+    //console.log(document.getElementById("character" + `${position}`).innerHTML, event.key, "filter");
     // ** DO THE CLASSES RESET ON CHANGING QOUTES? ** CHECK WHEN POSSIBLE
     if (test !== "Shift" && test == document.getElementById("character" + `${position}`).innerHTML){//not shift and equal to innerHTML
         console.log("correct");
         document.getElementById("character" + `${position}`).classList.add("correct"); 
         position = position + 1;
+        correct = correct + 1;
+        accuracyHTML.innerHTML = "Accuracy: " + Math.trunc(correct/position*100) + "%";
+        document.getElementById("character" + `${position-1}`).classList.remove("border", "blink");
     } else if (test !== "Shift" && test !== document.getElementById("character" + `${position}`).innerHTML){//not shift and not equal to innerHTML
         console.log("incorrect");
         document.getElementById("character" + `${position}`).classList.add("incorrect"); 
         position = position + 1;
+        accuracyHTML.innerHTML = "Accuracy: " + Math.trunc(correct/position*100) + "%";
+        document.getElementById("character" + `${position-1}`).classList.remove("border", "blink");
     } 
-
+    
+    //update border position if position is not equal to length
+    if (position !== length){
+        document.getElementById("character" + `${position}`).classList.add("border", "blink");
+    }
+   
 }
 
 
@@ -84,7 +103,6 @@ function inputFilter(event){
 
 
 populateText(str);
-
 
 
 

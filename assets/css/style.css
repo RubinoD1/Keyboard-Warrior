@@ -9,3 +9,24 @@
 .correct {
   color: green;
 }
+
+.border {
+  border-bottom: thick solid #32a1ce;
+}
+
+/* animation to flash border */
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    border: transparent;
+  }
+  100% {
+    opacity: 1;
+  }
+}

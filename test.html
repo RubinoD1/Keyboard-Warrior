@@ -20,20 +20,20 @@
   <!-- Main content -->
   <main>
     <div class="columns content is-medium has-background-grey-lighter has-text-black">
-      <div class="column ">
-        Accuracy %
+      <div id="accuracy" class="column">
+        Accuracy - -%
       </div>
       <div class="column">
         Quotes left: 0 / 1
         <!-- will need to manipulate the value of progress bar to update progress -->
-        <progress class="progress is-primary" value="15" max="100">15%</progress>
+        <progress  id="progress-bar" class="progress is-primary" value="15" max="100">15%</progress>
       </div>
     </div>  
     
     <div class="columns content is-large has-background-info ">
       <div class="column ">
         <blockquote id="quote">
-            <!-- Quote text is inserted to here -->
+         <!-- Qoute goes here -->
         </blockquote>
       </div>
     </div>  
