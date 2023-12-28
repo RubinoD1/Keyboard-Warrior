@@ -9,6 +9,30 @@
   background-color: antiquewhite;
 }
 
+
+/* 
+- instead of padding maybe just center content 
+- for buttons to make them all aligned horizontally -- sticky bottom
+
+*/
+#cards {
+  padding-top: 20px;
+}
+
+.card-header-title{
+  background-color: gold;
+}
+
+.card-content { 
+  background-color: cornsilk;
+}
+
+.cards-outline {
+  background-color: linen;
+}
+
+
+
 .incorrect {
   color: red;
 }

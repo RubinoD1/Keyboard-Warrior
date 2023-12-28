@@ -11,7 +11,6 @@ Today
 
 - calculate accuracy % 
   - when qoute complete save score to array for total % at the end of the game. 
-  - default % text is "TBD" 
 
 - Array for qoutes 
   - set qoute to array value 
