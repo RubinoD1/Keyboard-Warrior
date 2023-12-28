@@ -5,6 +5,7 @@ const cards = document.getElementById("cards");
 const quote = document.getElementById("quote");//main content
 const accuracyHTML = document.getElementById("accuracy");
 
+
 let str = "I am a test.";
 //console.log(str);
 let position = 0; //tracks current qoute position 

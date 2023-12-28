@@ -2,6 +2,13 @@
   visibility: hidden;
 }
 
+/* home btns cointainer */
+#home-btns{
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
 .incorrect {
   color: red;
 }
