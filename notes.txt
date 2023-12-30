@@ -1,22 +1,30 @@
 To-DO 
 -------
-#1 btn event listeners for start and settings 
 #3 Make arrays for quotes 
   - shuffle order once selected 
   - output value and set to inner.html 
+  - import/export 
 #5 Improve main site header with banner and better layout.
-
+#6 Settings: 
+  - Normal / Hard modes (qoute lengths)
+  - randomize / set order for qoutes 
+  - themes?
+#7 Make site header a link to homepage
+  - test if this resets all the defaults (properly hidden divs, etc)
+#8 Game completion screen
+  - total accuracy values into a total 
+  - replay btn, select new theme
 
 Today 
 
 - calculate accuracy % 
   - when qoute complete save score to array for total % at the end of the game. 
-
+  
 - Array for qoutes 
   - set qoute to array value 
   - cycle through qoutes (randomize later)
 
-- progress bar uppdates when qoute changes. 
+- progress bar updates when qoute changes. 
  - set starting bar value to 0 
 
 
