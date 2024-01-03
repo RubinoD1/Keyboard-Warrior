@@ -15,7 +15,7 @@
 - for buttons to make them all aligned horizontally -- sticky bottom
 
 */
-#cards {
+#cards, #qoute-parent {
   padding-top: 20px;
 }
 

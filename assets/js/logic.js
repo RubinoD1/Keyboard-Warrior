@@ -1,12 +1,10 @@
-const startBTN = document.getElementById("start-btn");
-const settingsBTN = document.getElementById("settings-btn");
 const homeBTNs = document.getElementById("home-btns");
 const cards = document.getElementById("cards");
 const quote = document.getElementById("quote");//main content
 const accuracyHTML = document.getElementById("accuracy");
 
+//let str = "I am a test.";
 
-let str = "I am a test.";
 //console.log(str);
 let position = 0; //tracks current qoute position 
 let length = 0; //qoute length --MAY NOT BE NEEDED 
@@ -17,24 +15,6 @@ let correct = 0;//tracks correct inputs
 //How to modify value bar
 //NEED to calculate current qoutes # with total and get percentage -- THEN TEST
 document.getElementById("progress-bar").setAttribute("value", "0");
-
-
-
-
-//btn event listeners 
-//TO-DO: Consolidate into one || case selection/ if/else to sort event input 
-//startBTN.addEventListener("click", startScreen);
-//settingsBTN.addEventListener("click", startScreen);
-
-//start screen function to hide btns and unhide cards
-function startScreen (){
-    console.log("Click");
-    //delete homeBTNs cointainer
-    homeBTNs.remove();
-    //uhide qoute selection cards
-    cards.classList.remove("hidden");
-}
-
 
 
 //Keyboard input listener -- WILL NEED TO CHECK TABLET COMPATIBILITY
@@ -102,8 +82,19 @@ function inputFilter(event){
 
 
 
+//arrays
+const shakespeare = ["shakespeare0", "shakespeare1", "shakespeare2", "shakespeare4", "shakespeare5"];
+const nietzsche = ["nietzsche0" ,"nietzsche1", "nietzsche2", "nietzsche3", "nietzsche4", "nietzsche5"];
+const mystery = ["mystery0" ,"mystery1", "mystery2", "mystery3", "mystery4", "mystery5"];
 
+
+
+
+
+//console.log(mystery[0], nietzsche[0], shakespeare[0]);
+let str = mystery[0];
 populateText(str);
+
 
 
 

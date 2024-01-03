@@ -1,28 +1,28 @@
 To-DO 
 -------
 #3 Make arrays for quotes 
-  - shuffle order once selected 
-  - output value and set to inner.html 
   - import/export 
-#5 Improve main site header with banner and better layout.
 #6 Settings: 
   - Normal / Hard modes (qoute lengths)
-  - randomize / set order for qoutes 
   - themes?
 #7 Make site header a link to homepage
   - test if this resets all the defaults (properly hidden divs, etc)
 #8 Game completion screen
   - total accuracy values into a total 
-  - replay btn, select new theme
+  - replay btn, returns to theme select screen (cards).
 
 Today 
+ 
+- when qoute complete start next 
+  - push accuracy value to array to calculate total overall %
+  - increase index position by 1 
+    - if at the end of array - start results screen, have replay btn 
 
 - calculate accuracy % 
   - when qoute complete save score to array for total % at the end of the game. 
   
 - Array for qoutes 
-  - set qoute to array value 
-  - cycle through qoutes (randomize later)
+  - cycle through qoutes 
 
 - progress bar updates when qoute changes. 
  - set starting bar value to 0 
@@ -34,27 +34,13 @@ Today
 
 NOTES
 --------
-- logo 460 x 120 (Bulma default logo)
 
 - Progress bar for quotes left: 
   - will need to manipulate the value of progress bar to update progress (JS). 
   - remeber to set default value to 0 in the HTML file when testing is done. 
 
-- Quote input checker 
-  - input matches current character: 
-     - Make text character green
-     - Move text position indicator to next character
-     - Update typing accuracy %
-     - 
-  - input does not match cuurent character:
-    - Make text character red
-
 - Qoute current location marker
  - Increase the font size, make character bold and have a border around location (black spaces will need to be marked somehow). 
-
-
-
-
 
 
 JS NOTES 
