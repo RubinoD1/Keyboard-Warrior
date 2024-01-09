@@ -6,7 +6,7 @@
 #home-btns{
   display: flex;
   justify-content: center;/* shared reduce to one class */
-  background-color: antiquewhite;
+  /*background-color: #211c16; */
 }
 
 #results{
@@ -37,7 +37,7 @@
 .card-content { 
   background-color: cornsilk;
 }
-
+/* might look better without added colour */
 .cards-outline {
   background-color: linen;
 }

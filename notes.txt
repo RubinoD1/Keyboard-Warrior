@@ -26,7 +26,7 @@ Today
   
 - Hide site header when game starts
   - unhide on the results screen.
-  - site header is a clickable link to return back to homepage 
+
 
 
 
