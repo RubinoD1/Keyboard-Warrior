@@ -154,12 +154,12 @@ function inputFilter(event){
 
 
   //update border position if position is not equal to length and qoute.innerHTML not ""
-  if (position !== length && quote.innerHTML === ""){
+  if (position !== length && quote.innerHTML !== ""){
       document.getElementById("character" + `${position}`).classList.add("border", "blink");
-  } //position is === length 
+      console.log("blink is at ", position);
+  } //position is === length ADD PRESS ANY KEY TO CONTINUE 
  
 }
-
 
 
 
