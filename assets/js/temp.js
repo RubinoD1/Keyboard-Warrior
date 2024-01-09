@@ -9,6 +9,7 @@ let arrayPosition = 0;//0 will start the index at the beginning
 let position = 0; //tracks current qoute position 
 let length = 0; //qoute length --MAY NOT BE NEEDED 
 let accuracy = "--";//-- by default -- changed after first user input (qoute)
+let accuracyScores = [];//array to hold accuracy values for qoutes to calculate overall total %
 let correct = 0;//tracks correct inputs
 
 //sorts user clicks  
@@ -30,31 +31,54 @@ document.onclick = function(event) {
 
 //Keyboard input listener -- WILL NEED TO CHECK TABLET COMPATIBILITY
 document.addEventListener('keydown', (event) => {
-  console.log(event.key); //event.code alternative  
+  //console.log(event.key); //event.code alternative  
   //CHECK IF qoute is empty -- if it is NOT then call flter function
   //pass event into inputFilter function 
-  //console.log(length);
+  //console.log(theme.length);
   if (position < length){ //NEED TO ALSO CHECK IF QOUTE IS EMPTY OR NOT
       inputFilter(event);
   } else if (position >= length) {//Trigger next qoute if avaliable and array not at last #
       console.log("END of qoute");
       arrayPosition = arrayPosition + 1;//increase arrayPosition 
-      //increase progress bar --calculate bar completion %
+      //Update qoutes left HTML
+      document.getElementById("qoutes-left").innerHTML = "Quotes left: " + arrayPosition + " / " + theme.length;
+      //console.log(arrayPosition, " / ", theme.length);
+      //push accuracy value to total array  
+      accuracyScores.push(Math.trunc(correct/position*100));
+    if(arrayPosition < theme.length){
+        //increase progress bar --calculate bar completion %
       let progress = Math.trunc(arrayPosition/theme.length*100);
       //console.log(progress);
       document.getElementById("progress-bar").setAttribute("value", `${progress}`);
+ 
+      //console.log(accuracyScores);
       position = 0;//resets qoute position
       correct = 0;//reset correct inputs
-      //push accuracy value to total array  
-      
+  
       //reset html value for next qoute --maybe set in populateText?
 
-      //update qoute position number for html (0/1, etc)--populateText it may be better to set there
-      
       quote.innerHTML= ""//clear qoute inner HTML
-      //increase arrayPosition and call function to set next quote
-      populateText(theme);
-  }//arrayPosition === arrayPosition.length && position >= length
+      populateText(theme);//call function to set next quote
+      } else if(arrayPosition >= theme.length){
+        qouteParent.classList.add("hidden");
+        //unhide results screen div
+
+        //total accuracy % for innerHTML 
+        let sum = 0;// create a variable for the sum and initialize it
+      // iterate over each item in the array
+      for (let i = 0; i < accuracyScores.length; i++ ) {
+        sum += accuracyScores[i];
+        //console.log(sum);
+      }
+
+      let outOf = theme.length *100;//array length *100 to get total score value
+      //set innerHTML for result score 
+
+        console.log("Game is finished!",accuracyScores,outOf,sum, Math.trunc(sum/outOf*100));
+      }
+
+  } 
+  
 })
 
 //function for selecting qoutes, randomizing and setting str value for starting qoute
@@ -79,6 +103,8 @@ function themeSelect(theme){
 
   //unhide || load qoute html file
   qouteParent.classList.remove("hidden");//uhide qoute selection cards
+  //Update qoutes left HTML
+  document.getElementById("qoutes-left").innerHTML = "Quotes left: " + arrayPosition + " / " + theme.length;
   //call qoute function to set first qoute
   populateText(theme);
 }
@@ -94,9 +120,10 @@ function populateText(theme){
       span.setAttribute("id","character" + `${tracker}`);//add unique add to each span element
       quote.appendChild(span);
       tracker = tracker + 1;//assign unique id number
-      length = length +1;//log qoute length 
       //console.log(tracker);
   })
+  length = str.length;//set length counter to str.length
+  //console.log(length, str.length);
   //ADD border class to character0 id || set timer that changes style
   document.getElementById("character0").classList.add("border", "blink");
   //TO-DO: position, accuracy and correct reset values
@@ -122,13 +149,19 @@ function inputFilter(event){
       accuracyHTML.innerHTML = "Accuracy: " + Math.trunc(correct/position*100) + "%";
       document.getElementById("character" + `${position-1}`).classList.remove("border", "blink");
   } //ADD check for qoute at end and input entered --call change qoute || end game
-  
+    //if position and length are equal then load next qoute if avaliable
+
+
   //update border position if position is not equal to length and qoute.innerHTML not ""
   if (position !== length && quote.innerHTML === ""){
       document.getElementById("character" + `${position}`).classList.add("border", "blink");
-  }
+  } //position is === length 
  
 }
+
+
+
+
 
 
 

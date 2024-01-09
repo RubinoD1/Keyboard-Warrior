@@ -94,13 +94,3 @@ const mystery = ["mystery0" ,"mystery1", "mystery2", "mystery3", "mystery4", "my
 //console.log(mystery[0], nietzsche[0], shakespeare[0]);
 let str = mystery[0];
 populateText(str);
-
-
-
-
-
-
-
-
-
-

@@ -12,6 +12,11 @@ To-DO
   - replay btn, returns to theme select screen (cards).
 
 Today 
+
+- ONCE last input position = qoute length end qoute 
+  - Right now it needs another input to switch to next 
+
+- End game working 
  
 - when qoute complete start next 
   - push accuracy value to array to calculate total overall %
@@ -19,15 +24,12 @@ Today
     - if at the end of array - start results screen, have replay btn 
 
 - calculate accuracy % 
+  - accuracy % html needs to reset to --% at the beginning of each qoute. 
+    **DOUBLE CHECK IF ACCURATE SCORE IS GIVEN**
   - when qoute complete save score to array for total % at the end of the game. 
   
-- Array for qoutes 
-  - cycle through qoutes 
-
-- progress bar updates when qoute changes. 
- - set starting bar value to 0 
-
-
+- Hide site header when game starts
+  - unhide on the results screen.
 
 
 

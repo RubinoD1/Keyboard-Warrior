@@ -80,7 +80,7 @@
         </p>
       </div>
       <footer class="card-footer">
-       <button id="start-btn" class="card-footer-item button is-info">
+       <button id="shakespeare" class="card-footer-item button is-info">
           Select
       </button>
       </footer>
@@ -106,7 +106,7 @@
         </p>
       </div>
       <footer class="card-footer">
-        <button id="start-btn" class="card-footer-item button is-info">
+        <button id="nietzsche" class="card-footer-item button is-info">
           Select
       </button>
       </footer>
@@ -132,7 +132,7 @@
         </p>
       </div>
       <footer class="card-footer">
-        <button id="start-btn" class="card-footer-item button is-info">
+        <button id="mystery" class="card-footer-item button is-info">
           Select
       </button>
       </footer>
@@ -142,7 +142,27 @@
   </div>
 
   <!-- Main content -->
+  <main id="qoute-parent" class="hidden">
+    <div class="columns content is-medium has-background-grey-lighter has-text-black">
+      <div id="accuracy" class="column">
+        Accuracy - -%
+      </div>
+      <div class="column">
+        <div id="qoutes-left">Quotes left: 0 / 1</div>
+        <!-- will need to manipulate the value of progress bar to update progress -->
+        <progress  id="progress-bar" class="progress is-primary" value="0" max="100">15%</progress>
+      </div>
+    </div>  
+    
+    <div class="columns content is-large has-background-info ">
+      <div class="column ">
+        <blockquote id="quote">
+         <!-- Qoute goes here -->
+        </blockquote>
+      </div>
+    </div>  
 
+  </main>
 
 <!-- JS file -->  
 <script src="./assets/js/temp.js"></script> 

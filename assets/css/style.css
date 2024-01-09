@@ -5,9 +5,16 @@
 /* home btns cointainer */
 #home-btns{
   display: flex;
-  justify-content: center;
+  justify-content: center;/* shared reduce to one class */
   background-color: antiquewhite;
 }
+
+.results{
+  display: grid;
+  justify-content: center;/* shared reduce to one class */
+}
+
+
 
 
 /* 
