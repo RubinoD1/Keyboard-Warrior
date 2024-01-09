@@ -16,9 +16,11 @@ Today
 
 - ONCE last input position = qoute length end qoute 
   - Right now it needs another input to switch to next 
+  - CHANGE HTML text to "Press any key to continue..." ? with blink styling in RGB? 
+    - or add line to bottom of qoute?? 
+    - Add 5 sec timer if no key is pressed to display message
 
 - End game working 
-  - user overall accurracy % showing 
   - replay button working 
 
   

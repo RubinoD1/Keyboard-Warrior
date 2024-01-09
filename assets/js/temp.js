@@ -63,7 +63,7 @@ document.addEventListener('keydown', (event) => {
       } else if(arrayPosition >= theme.length){
         qouteParent.classList.add("hidden");
         //unhide results screen div
-
+        document.getElementById("results").classList.remove("hidden");
         //total accuracy % for innerHTML 
         let sum = 0;// create a variable for the sum and initialize it
       // iterate over each item in the array
@@ -73,9 +73,10 @@ document.addEventListener('keydown', (event) => {
       }
 
       let outOf = theme.length *100;//array length *100 to get total score value
+      let userResults = Math.trunc(sum/outOf*100); //calculate user overall accuracy%
       //set innerHTML for result score 
-
-        console.log("Game is finished!",accuracyScores,outOf,sum, Math.trunc(sum/outOf*100));
+      document.getElementById("user-score").innerHTML = "Overall Accuracy: " + `${userResults}` + "%";
+      //console.log("Game is finished!",accuracyScores,outOf,sum, Math.trunc(sum/outOf*100));
       }
 
   } 
@@ -137,14 +138,14 @@ function inputFilter(event){
   //console.log(document.getElementById("character" + `${position}`).innerHTML, event.key, "filter");
   // ** DO THE CLASSES RESET ON CHANGING QOUTES? ** CHECK WHEN POSSIBLE
   if (test !== "Shift" && test == document.getElementById("character" + `${position}`).innerHTML){//not shift and equal to innerHTML
-      console.log("correct");
+      //console.log("correct");
       document.getElementById("character" + `${position}`).classList.add("correct"); 
       position = position + 1;
       correct = correct + 1;
       accuracyHTML.innerHTML = "Accuracy: " + Math.trunc(correct/position*100) + "%";
       document.getElementById("character" + `${position-1}`).classList.remove("border", "blink");
   } else if (test !== "Shift" && test !== document.getElementById("character" + `${position}`).innerHTML){//not shift and not equal to innerHTML
-      console.log("incorrect");
+      //console.log("incorrect");
       document.getElementById("character" + `${position}`).classList.add("incorrect"); 
       position = position + 1;
       accuracyHTML.innerHTML = "Accuracy: " + Math.trunc(correct/position*100) + "%";
@@ -156,7 +157,6 @@ function inputFilter(event){
   //update border position if position is not equal to length and qoute.innerHTML not ""
   if (position !== length && quote.innerHTML !== ""){
       document.getElementById("character" + `${position}`).classList.add("border", "blink");
-      console.log("blink is at ", position);
   } //position is === length ADD PRESS ANY KEY TO CONTINUE 
  
 }
