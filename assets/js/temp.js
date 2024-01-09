@@ -45,6 +45,7 @@ document.addEventListener('keydown', (event) => {
       //console.log(arrayPosition, " / ", theme.length);
       //push accuracy value to total array  
       accuracyScores.push(Math.trunc(correct/position*100));
+      accuracyHTML.innerHTML = "Accuracy: --%";//reset accuracy percentage HTML for next qoute
     if(arrayPosition < theme.length){
         //increase progress bar --calculate bar completion %
       let progress = Math.trunc(arrayPosition/theme.length*100);

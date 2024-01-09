@@ -4,6 +4,7 @@ To-DO
   - import/export 
 #6 Settings: 
   - Normal / Hard modes (qoute lengths)
+  - quick play (1 random qoute from any array)?? 
   - themes?
 #7 Make site header a link to homepage
   - test if this resets all the defaults (properly hidden divs, etc)
@@ -17,29 +18,19 @@ Today
   - Right now it needs another input to switch to next 
 
 - End game working 
- 
-- when qoute complete start next 
-  - push accuracy value to array to calculate total overall %
-  - increase index position by 1 
-    - if at the end of array - start results screen, have replay btn 
+  - user overall accurracy % showing 
+  - replay button working 
 
-- calculate accuracy % 
-  - accuracy % html needs to reset to --% at the beginning of each qoute. 
-    **DOUBLE CHECK IF ACCURATE SCORE IS GIVEN**
-  - when qoute complete save score to array for total % at the end of the game. 
   
 - Hide site header when game starts
   - unhide on the results screen.
+  - site header is a clickable link to return back to homepage 
 
 
 
 
 NOTES
 --------
-
-- Progress bar for quotes left: 
-  - will need to manipulate the value of progress bar to update progress (JS). 
-  - remeber to set default value to 0 in the HTML file when testing is done. 
 
 - Qoute current location marker
  - Increase the font size, make character bold and have a border around location (black spaces will need to be marked somehow). 
