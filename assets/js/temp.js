@@ -46,17 +46,8 @@ document.addEventListener('keydown', (event) => {
     
     } else if(arrayPosition >= theme.length){
         qouteParent.remove();
-        document.getElementById("results").classList.remove("hidden");//unhide results screen div
-        //total accuracy % for innerHTML 
-        let sum = 0;// create a variable for the sum and initialize it
-    for (let i = 0; i < accuracyScores.length; i++ ) {// iterate over each item in the array
-        sum += accuracyScores[i];
-    }
-
-      let outOf = theme.length *100;//array length *100 to get total score value
-      let userResults = Math.trunc(sum/outOf*100); //calculate user overall accuracy%
-      //set innerHTML for result score 
-      document.getElementById("user-score").innerHTML = "Overall Accuracy: " + `${userResults}` + "%";
+        restultsHTML();
+   
       }
     } 
 })
@@ -122,7 +113,33 @@ function inputFilter(event){
   }
 }
 
+//calculate user score and make results div 
+function restultsHTML(){
+  //calculate user score
+  let sum = 0;// create a variable for the sum and initialize it
+  for (let i = 0; i < accuracyScores.length; i++ ) {// iterate over each item in the array
+    sum += accuracyScores[i];
+  }
+  let outOf = theme.length *100;//array length *100 to get total score value
+  let userResults = Math.trunc(sum/outOf*100); //calculate user overall accuracy%
 
+  //make results div 
+  let parent = document.createElement('div');//parent div 
+  parent.id = 'results'; //parent id="results"
+  let h1 = document.createElement('h1');//create h1 tag 
+  h1.id = 'user-score'; 
+  h1.className = 'title is-1 has-text-white';  
+  h1.textContent = "Overall Accuracy: " + `${userResults}` + "%";
+  let newLine = document.createElement('br');//create br tag (break)
+  let button = document.createElement('button');//make button
+  button.id = 'replay';
+  button.className = 'button is-large is-responsive button is-link';
+  button.textContent = 'Replay';
+  parent.appendChild(h1);//add h1 to div
+  parent.appendChild(newLine);//add br to div
+  parent.appendChild(button);//add button to div
+  document.body.appendChild(parent);//add div to the document
+}
 
 
 
