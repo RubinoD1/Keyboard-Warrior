@@ -66,7 +66,7 @@
       </header>
       <div class="card-content">
         <p class="title">
-          “Our doubts are traitors, And make us lose the good we oft might win, By fearing to attempt.”
+          “When words are scarce they are seldom spent in vain.”
         </p>
         <p class="subtitle">
           Shakespeare
@@ -136,39 +136,38 @@
 
   <!-- Main content -->
   <main id="qoute-parent" class="hidden">
-    <div class="columns content is-medium has-background-grey-lighter has-text-black">
+    <div class="columns content is-medium has-background-dark has-text-white">
       <div id="accuracy" class="column">
         Accuracy - -%
       </div>
       <div class="column">
-        <div id="qoutes-left">Quotes left: 0 / 1</div>
-        <!-- will need to manipulate the value of progress bar to update progress -->
-        <progress  id="progress-bar" class="progress is-primary" value="0" max="100">15%</progress>
+        <div id="qoutes-left">Quotes left: -/-</div>
+        <progress  id="progress-bar" class="progress is-primary" value="0" max="100">0%</progress>
       </div>
     </div>  
     
     <div class="columns content is-large has-background-info">
       <div class="column">
-        <blockquote id="quote">
+        <blockquote id="quote" class="title is-1">
          <!-- Qoute goes here -->
         </blockquote>
       </div>
     </div>  
     <!-- end of qoute indicator-->
-    <p id="continue" class="hidden">Press any key to continue...</p>
+    <p id="continue" class="hidden title is-2">Press any key to continue...</p>
 
   </main>
 
 
   <!-- RESULTS SCREEN -->
   <section id="results" class="hidden">
-    <h1 id="user-score" class="title is-1">
+    <h1 id="user-score" class="title is-1 has-text-white">
       Overall Accuracy: --%
     </h1>
     
     <br>
     
-    <button class="button is-large is-responsive button is-link">
+    <button id="replay" class="button is-large is-responsive button is-link">
       Replay
     </button>
   </section>

@@ -6,60 +6,25 @@ To-DO
   - Normal / Hard modes (qoute lengths)
   - quick play (1 random qoute from any array)?? 
   - themes?
-#7 Make site header a link to homepage
-  - test if this resets all the defaults (properly hidden divs, etc)
 #8 Game completion screen
-  - total accuracy values into a total 
   - replay btn, returns to theme select screen (cards).
 
 Today 
 
-- ONCE last input position = qoute length end qoute 
-  - Right now it needs another input to switch to next 
-  - CHANGE HTML text to "Press any key to continue..." ? with blink styling in RGB? 
-    - or add line to bottom of qoute?? 
-    - Add 5 sec timer if no key is pressed to display message
-
 - End game working 
   - replay button working 
 
-  
-- Hide site header when game starts
-  - unhide on the results screen.
+- Instead of hidding divs: remove them and see if this cleans up the white space. 
+  - Alternative: make the divs in JS instead of having them hidden by default. 
+    - need to stop scroll bar and hide white spaces at bottom. 
 
+- Change start button into difficulty select buttons?
 
+- ADD actual qoutes to array.
 
 
 
 NOTES
 --------
 
-- Qoute current location marker
- - Increase the font size, make character bold and have a border around location (black spaces will need to be marked somehow). 
 
-
-JS NOTES 
--------------
-//Qoute logs for refrence 
-//console.log(quote.textContent); //quote text content
-//console.log(quote.textContent.charAt(0)); //get specefic character
-//console.log(quote.textContent.length); //qoute length
--------------- 
-
-
-Keyboard info- logs relevant info 
-----
-
-  const keyCodes = () => {
-  document.addEventListener('keydown', function (e) {
-    console.log(
-      'keyCodeDEP', e.which,
-      'key', e.key,
-      'code', e.code,
-      'location', e.location
-    );
-  });
-};
-keyCodes();
-
-----------

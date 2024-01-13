@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(23, 22, 21);
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -6,12 +10,12 @@
 #home-btns{
   display: flex;
   justify-content: center;/* shared reduce to one class */
-  /*background-color: #211c16; */
 }
 
 #results{
   display: grid;
   justify-content: center;/* shared reduce to one class */
+  padding-top: 100px;
 }
 
 #continue{
@@ -20,29 +24,21 @@
 	animation-iteration-count: infinite;
 }
 
-
-/* 
-- instead of padding maybe just center content 
-- for buttons to make them all aligned horizontally -- sticky bottom
-
-*/
 #cards, #qoute-parent {
   padding-top: 20px;
 }
 
 .card-header-title{
-  background-color: gold;
+  background-color: #f0cd13;
 }
 
 .card-content { 
-  background-color: cornsilk;
+  background-color: #f2db7b;
 }
-/* might look better without added colour */
+
 .cards-outline {
-  background-color: linen;
+  background-color: #1a1715;
 }
-
-
 
 .incorrect {
   color: red;
