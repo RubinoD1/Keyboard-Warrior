@@ -12,7 +12,7 @@ let accuracy = "--";//-- by default -- changed after first user input (qoute)
 let accuracyScores = [];//array to hold accuracy values for qoutes to calculate overall total %
 let correct = 0;//tracks correct inputs
 
-//sorts user clicks  
+//button event listeners
 document.onclick = function(event) {
    let target = event.target.id
    if(target === "start-btn"){
@@ -33,7 +33,7 @@ document.addEventListener('keydown', (event) => {
   } else if (position >= length) {//Trigger next qoute if avaliable and array not at last #
       arrayPosition = arrayPosition + 1;//increase arrayPosition 
       //Update qoutes left HTML
-      document.getElementById("qoutes-left").innerHTML = "Quotes left: " + arrayPosition + " / " + theme.length;
+      document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
       accuracyScores.push(Math.trunc(correct/position*100));//push accuracy value to total array  
       accuracyHTML.innerHTML = "Accuracy: --%";//reset accuracy percentage HTML for next qoute
     if(arrayPosition < theme.length){
@@ -65,7 +65,7 @@ function themeSelect(theme){
     }
   qouteParent.classList.remove("hidden");//uhide qoute selection cards
   //Update qoutes left HTML
-  document.getElementById("qoutes-left").innerHTML = "Quotes left: " + arrayPosition + " / " + theme.length;
+  document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
 
   populateText(theme);  //call qoute function to set first qoute
 }
@@ -113,66 +113,6 @@ function inputFilter(event){
   }
 }
 
-//make qoute div 
-function qouteHTML(){
-  //create parent div called main
-
-  //parent div id ="qoute-parent"
-
-  //make first div inside parent 
-
-  //1st div class="columns content is-medium has-background-grey-lighter has-text-black"
-
-  //create div inside of 1st div
-  
-  //child div id="accuracy"
-
-  //child div class="column"
-
-  //child div text: Accuracy: --%
-  //append child div to 1st div
-
-  //create 2 child div
-
-  //second child div class="column"
-
-  //second child div make another div inside of second child 
-
-  //new div id="qoutes-left"
-
-  //new div text: Qoutes left -/-
-  //append inside div to second child div
-
-  //make progress inside of second child div
-
-  //progress id="progress-bar"
-
-  //progress class="progress is-primary"
-
-  //progress value="0"
-
-  //progress max="100"
-  //append progress to second child div
-
-  //create second div insider of parent 
-
-  //second div class="columns content is-large has-background-info"
-
-  //create div inside of second div 
-
-  //inside div class="column"
-  //append inside div to second div
-  
-  //inside child div of second div create blockqoute
-
-  //blockqoute id="qoute"
-  //append blockqoute to child div of second div
-
-  //append first div to parent 
-  //append second div to parent
-  //append parent to body of HTML
-}
-
 //calculate user score and make results div 
 function restultsHTML(){
   //calculate user score
@@ -190,13 +130,13 @@ function restultsHTML(){
   h1.id = 'user-score'; 
   h1.className = 'title is-1 has-text-white';  
   h1.textContent = "Overall Accuracy: " + `${userResults}` + "%";
-  let newLine = document.createElement('br');//create br tag (break)
+  //let newLine = document.createElement('br');//create br tag (break)
   let button = document.createElement('button');//create button
   button.id = 'replay';
   button.className = 'button is-large is-responsive button is-link';
   button.textContent = 'Replay';
   parent.appendChild(h1);//add h1 to div
-  parent.appendChild(newLine);//add br to div
+  //parent.appendChild(newLine);//add br to div
   parent.appendChild(button);//add button to div
   document.body.appendChild(parent);//add div to the document
 }

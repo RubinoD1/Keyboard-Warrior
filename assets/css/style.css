@@ -1,9 +1,17 @@
 body {
-  background-color: rgb(23, 22, 21);
+  /*Change style to once header is removed background-color: rgb(23, 22, 21);*/ 
+  background-color: rgb(77 72 121);
+  
 }
 
 .hidden {
   visibility: hidden;
+}
+
+#bg-image{
+  display: flex;
+  justify-content: center;/* shared reduce to one class */
+  background-color: #8681a5;
 }
 
 /* home btns cointainer */
@@ -15,8 +23,18 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;/*repeat condense*/
+  
 }
 
+#start-btn{
+  width: 25%;
+  font-size: x-large;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #009688;
+}
 
 #results{
   display: grid;
