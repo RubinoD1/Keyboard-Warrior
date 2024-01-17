@@ -34,6 +34,9 @@ Today
 
 - ADD actual qoutes to array.
 
+- Add on hover for homepage start button color change 
+
+- Breakpoint for smaller screens added that removes no scroll
 
 
 

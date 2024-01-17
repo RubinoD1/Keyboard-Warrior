@@ -1,14 +1,19 @@
 body {
   /*Change style to once header is removed background-color: rgb(23, 22, 21);*/ 
   background-color: rgb(77 72 121);
-  
 }
+
+html {/*Prevents Bulma defaults from creating a scrollbar*/
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 
 .hidden {
   visibility: hidden;
 }
 
-#bg-image{
+#banner {
   display: flex;
   justify-content: center;/* shared reduce to one class */
   background-color: #8681a5;
@@ -22,6 +27,7 @@ body {
   background-size: cover; 
   background-position: center center;
   background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
   height: 100vh;/*repeat condense*/
   
 }
@@ -40,7 +46,7 @@ body {
   display: grid;
   justify-content: center;/* shared reduce to one class */
   padding-top: 100px;
-  height: 100vh;/*repeat condense*/
+  padding-bottom: 900px; /*CHANGE? to cover screen with bg-color */
 }
 
 #continue{
