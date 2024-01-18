@@ -2,21 +2,11 @@ To-DO
 -------
 #3 Make arrays for quotes 
   - import/export 
-#6 Settings: 
-  - Normal / Hard modes (qoute lengths)
-  - quick play (1 random qoute from any array)?? 
-  - themes?
-#8 Game completion screen
-  - replay btn, returns to theme select screen (cards).
-#9 Favicon 
 #10 Readme file
 
 Today 
 
-- Make homepage index.html and have cards on a seperate page 
-  - change start btn event listener to load cards.html || 
-    change btn to a link to page and remove start btn from listener. 
-  -Homepage CSS: make btn centered height wise and increase btn size
+- 
 
 - console error on results screen if input pressed. 
  - issue is qoutes left: - / - trying to be changed by line 36(currently):
@@ -26,15 +16,7 @@ Today
 - Replay button is currently reloading the page back to the start screen. 
   - Change to load to card selection, or re-work homepage?  
 
-- Instead of hidding divs: remove them and see if this cleans up the white space. 
-  - Alternative: make the divs in JS instead of having them hidden by default. 
-    - need to stop scroll bar and hide white spaces at bottom. 
-
-- Change start button into difficulty select buttons?
-
 - ADD actual qoutes to array.
-
-- Add on hover for homepage start button color change 
 
 - Breakpoint for smaller screens added that removes no scroll
 

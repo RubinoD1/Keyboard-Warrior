@@ -1,6 +1,7 @@
 body {
   /*Change style to once header is removed background-color: rgb(23, 22, 21);*/ 
   background-color: rgb(77 72 121);
+  
 }
 
 html {/*Prevents Bulma defaults from creating a scrollbar*/
@@ -39,7 +40,12 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #009688;
+  background-color: #673ab7
+}
+
+#start-btn:hover{
+  background-color:#7e4ed4;
+  transition: 0.7s;
 }
 
 #results{
@@ -56,9 +62,11 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
 }
 
 #cards, #qoute-parent {
-  padding-top: 20px;
+  /*padding-top: 20px;  */
   height: 100vh;/*repeat condense*/
 }
+
+
 
 .card-header-title{
   background-color: #f0cd13;
