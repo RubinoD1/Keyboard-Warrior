@@ -1,14 +1,11 @@
 body {
-  /*Change style to once header is removed background-color: rgb(23, 22, 21);*/ 
   background-color: rgb(77 72 121);
-  
 }
 
 html {/*Prevents Bulma defaults from creating a scrollbar*/
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
 
 .hidden {
   visibility: hidden;
@@ -28,9 +25,7 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   background-size: cover; 
   background-position: center center;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   height: 100vh;/*repeat condense*/
-  
 }
 
 #start-btn{
@@ -66,14 +61,12 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   height: 100vh;/*repeat condense*/
 }
 
-
-
 .card-header-title{
   background-color: #f0cd13;
 }
 
 .card-content { 
-  background-color: #f2db7b;
+  background-color: #ede2b2;
 }
 
 .cards-outline {
@@ -97,6 +90,7 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   animation: blink 1s steps(1, end) infinite;
 }
 
+/* keyframes for qoute position tracker */
 @keyframes blink {
   0% {
     opacity: 1;
@@ -109,7 +103,7 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   }
 }
 
-
+/* keyframes for "press any key to continue..." message */
 @keyframes rainbow{
   100%,0%{
     color: rgb(255,0,0);
@@ -148,3 +142,5 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
     color: rgb(255,0,127);
   }
 }
+
+/* media breakpoints */

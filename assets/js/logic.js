@@ -32,24 +32,22 @@ document.addEventListener('keydown', (event) => {
       inputFilter(event);
   } else if (position >= length) {//Trigger next qoute if avaliable and array not at last #
       arrayPosition = arrayPosition + 1;//increase arrayPosition 
-      //Update qoutes left HTML
-      document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
       accuracyScores.push(Math.trunc(correct/position*100));//push accuracy value to total array  
       accuracyHTML.innerHTML = "Accuracy: --%";//reset accuracy percentage HTML for next qoute
     if(arrayPosition < theme.length){
       let progress = Math.trunc(arrayPosition/theme.length*100);//increase progress bar --calculate bar completion %
       document.getElementById("progress-bar").setAttribute("value", `${progress}`);
+      //Update qoutes left HTML
+      document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
       position = 0;//resets qoute position
       correct = 0;//reset correct inputs
       quote.innerHTML= ""//clear qoute inner HTML
       populateText(theme);//call function to set next quote
-    
     } else if(arrayPosition >= theme.length){
         qouteParent.remove();
         restultsHTML();
-   
-      }
-    } 
+    }
+  } 
 })
 
 //function for selecting qoutes, randomizing and setting str value for starting qoute
@@ -66,7 +64,6 @@ function themeSelect(theme){
   qouteParent.classList.remove("hidden");//uhide qoute selection cards
   //Update qoutes left HTML
   document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
-
   populateText(theme);  //call qoute function to set first qoute
 }
 
@@ -85,7 +82,6 @@ function populateText(theme){
   length = str.length;//set length counter to str.length
   //ADD border class to character0 id || set timer that changes style
   document.getElementById("character0").classList.add("border", "blink");
-
   document.getElementById("continue").classList.add("hidden");  //hide continue div
 }
 

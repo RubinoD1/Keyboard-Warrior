@@ -3,23 +3,22 @@ To-DO
 #3 Make arrays for quotes 
   - import/export 
 #10 Readme file
+#11 Clean up code with comments and format (try prettier extension?)
+#12 Update GitHub page with proper info (tags, description, etc.)
 
 Today 
 
-- 
+- Breakpoint for smaller screens added that removes no scroll
+  - test breakpoints for cards-- MAKE SURE THERE IS NO ISSUES WITH SCROLL 
 
-- console error on results screen if input pressed. 
- - issue is qoutes left: - / - trying to be changed by line 36(currently):
-   //Update qoutes left HTML
-   document.getElementById("qoutes-left").innerHTML = "Quotes left: " + arrayPosition + " / " + theme.length; 
+- progress bar NOT full width -- try 50%
+
+- Change replay button colour? 
 
 - Replay button is currently reloading the page back to the start screen. 
   - Change to load to card selection, or re-work homepage?  
 
 - ADD actual qoutes to array.
-
-- Breakpoint for smaller screens added that removes no scroll
-
 
 
 NOTES
