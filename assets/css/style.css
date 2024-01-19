@@ -144,3 +144,6 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
 }
 
 /* media breakpoints */
+@media screen and (max-width: 960px){
+  
+}

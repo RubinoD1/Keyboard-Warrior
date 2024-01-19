@@ -32,6 +32,23 @@ const nietzscheNormalMode = [
     "One loves ultimately one's desires, not the thing desired.",
     "Madness is something rare in individuals — but in groups, parties, peoples, and ages, it is the rule.",
     "Every great philosophy so far has been the personal confession of its author and a kind of involuntary and unconscious memoir.",
+    "It is not a lack of love, but a lack of friendship that makes unhappy marriages.",
+    "I'm not upset that you lied to me, I'm upset that from now on I can't believe you.",
+    "And those who were seen dancing were thought to be insane by those who could not hear the music.",
+    "It is hard enough to remember my opinions, without also remembering my reasons for them!",
+    "There is always some madness in love. But there is also always some reason in madness.",
+    "You must have chaos within you to give birth to a dancing star.",
+    "Sometimes people don't want to hear the truth because they don't want their illusions destroyed.",
+    "He who has a why to live for can bear almost any how.",
+    "In heaven, all the interesting people are missing.",
+    "The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind.",
+    "In individuals, insanity is rare; but in groups, parties, nations and epochs, it is the rule.",
+    "No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone.",
+    "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.",
+    "The advantage of a bad memory is that one enjoys several times the same good things for the first time.",
+    "I am a forest, and a night of dark trees: but he who is not afraid of my darkness, will find banks full of roses under my cypresses.",
+    "Every deep thinker is more afraid of being understood than of being misunderstood.",
+    "Thoughts are the shadows of our feelings -- always darker, emptier and simpler.",
     ""
 
 ];

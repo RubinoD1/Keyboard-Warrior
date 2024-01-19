@@ -6,7 +6,7 @@
     <title>
         Keyboard Warrior
     </title>
-    <!--CSS -->
+    <!--CSS files -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- favicon -->
@@ -15,137 +15,133 @@
 
 <body>
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <!-- CHANGE TO index.html WHEN DONE TESTING!!!-->
-      <a href="./index.html">
-        <figure id="banner">
-          <img src="./assets/images/banner2.png" >
-        </figure> 
-      </a>
-  
-    </div>
-  </section>
-   
-  <div id="home-btns" class="hero-body">
-    <button id="start-btn" class="button is-largebutton is-link">
-      Start
-    </button>
+<!-- Header -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <a href="./index.html">
+     <figure id="banner">
+      <img src="./assets/images/banner2.png" alt="site banner">
+     </figure> 
+    </a>
   </div>
+</section>
+
+<!-- Homepage start button-->   
+<div id="home-btns" class="hero-body">
+  <button id="start-btn" class="button is-largebutton is-link">
+  Start
+  </button>
+</div>
   
-
-   <!--CARDS-->
-   <!-- TO-DO: ADD TITLE TO CARD SELECTION-->
-   <div id="cards" class="columns hidden">
-       
-    <div class="column card cards-outline">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="./assets/images/Shakespeare.jpeg" alt="Shakespeare image">
-        </figure>
-      </div>
-      <header class="card-header">
-        <p class="card-header-title is-justify-content-center">
-          Shakespeare
-        </p>
-      </header>
-      <div class="card-content">
-        <p class="title">
-          “When words are scarce they are seldom spent in vain.”
-        </p>
-        <p class="subtitle">
-          Shakespeare
-        </p>
-      </div>
-      <footer class="card-footer">
-       <button id="shakespeare" class="card-footer-item button is-info">
-          Select
-      </button>
-      </footer>
+<!--CARDS-->
+<div id="cards" class="columns hidden">
+  <div class="column card cards-outline">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="./assets/images/Shakespeare.jpeg" alt="William Shakespeare image">
+      </figure>
     </div>
-
-    <div class="column card cards-outline">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="./assets/images/nietzsche.jpg" alt="Friedrich Nietzsche image">
-        </figure>
-      </div>
-      <header class="card-header">
-        <p class="card-header-title is-justify-content-center">
-          Friedrich Nietzsche
-        </p>
-      </header>
-      <div class="card-content">
-        <p class="title">
-          “If we possess our why of life we can put up with almost any how.”
-        </p>
-        <p class="subtitle">
-          Friedrich Nietzsche
-        </p>
-      </div>
-      <footer class="card-footer">
-        <button id="nietzsche" class="card-footer-item button is-info">
-          Select
-      </button>
-      </footer>
+    <header class="card-header">
+      <p class="card-header-title is-justify-content-center">
+      William Shakespeare
+      </p>
+    </header>
+    <div class="card-content">
+      <p class="title">
+      “When words are scarce they are seldom spent in vain.”
+      </p>
+      <p class="subtitle">
+      William Shakespeare
+      </p>
     </div>
-
-    <div class="column card cards-outline">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="./assets/images/mystery.jpg" alt="Random image">
-        </figure>
-      </div>
-      <header class="card-header">
-        <p class="card-header-title is-justify-content-center">
-          Mystery
-        </p>
-      </header>
-      <div class="card-content">
-        <p class="title">
-          “Without pain, without sacrifice, we would have nothing.”
-        </p>
-        <p class="subtitle">
-          Fight Club
-        </p>
-      </div>
-      <footer class="card-footer">
-        <button id="mystery" class="card-footer-item button is-info">
-          Select
+    <footer class="card-footer">
+      <button id="shakespeare" class="card-footer-item button is-info">
+      Select
       </button>
-      </footer>
-    </div>
-
-    
+    </footer>
   </div>
 
-  <!-- Main content -->
-  <main id="qoute-parent" class="hidden">
-    <div class="columns content is-medium has-background-dark has-text-white">
-      <div id="accuracy" class="column">
-        Accuracy - -%
-      </div>
-      <div class="column">
-        <div id="qoutes-left">Quotes Complete: -/-</div>
-        <progress  id="progress-bar" class="progress is-primary" value="0" max="100">0%</progress>
-      </div>
-    </div>  
+  <div class="column card cards-outline">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="./assets/images/nietzsche.jpg" alt="Friedrich Nietzsche image">
+      </figure>
+    </div>
+    <header class="card-header">
+      <p class="card-header-title is-justify-content-center">
+      Friedrich Nietzsche
+      </p>
+    </header>
+    <div class="card-content">
+      <p class="title">
+      “If we possess our why of life we can put up with almost any how.”
+      </p>
+      <p class="subtitle">
+      Friedrich Nietzsche
+      </p>
+    </div>
+    <footer class="card-footer">
+      <button id="nietzsche" class="card-footer-item button is-info">
+      Select
+      </button>
+    </footer>
+  </div>
+
+  <div class="column card cards-outline">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="./assets/images/mystery.jpg" alt="Mystery theme image">
+      </figure>
+    </div>
+    <header class="card-header">
+      <p class="card-header-title is-justify-content-center">
+      Mystery
+      </p>
+    </header>
+    <div class="card-content">
+      <p class="title">
+      “Without pain, without sacrifice, we would have nothing.”
+      </p>
+      <p class="subtitle">
+      Fight Club
+      </p>
+    </div>
+    <footer class="card-footer">
+      <button id="mystery" class="card-footer-item button is-info">
+      Select
+      </button>
+    </footer>
+   </div>
+</div>
+
+<!-- Main content -->
+<main id="qoute-parent" class="hidden">
+  <div class="columns content is-medium has-background-dark has-text-white">
+    <div id="accuracy" class="column">
+    Accuracy - -%
+    </div>
+    <div class="column">
+      <div id="qoutes-left">
+      Quotes Complete: -/-
+    </div>
+      <progress  id="progress-bar" class="progress is-primary" value="0" max="100">0%</progress>
+    </div>
+  </div>  
     
-    <div class="columns content is-large has-background-info">
-      <div class="column">
-        <blockquote id="quote" class="title is-1">
-         <!-- Qoute goes here -->
-        </blockquote>
-      </div>
-    </div>  
-    <!-- end of qoute indicator-->
-    <p id="continue" class="hidden title is-2">Press any key to continue...</p>
-
-  </main>
-
-
-
+  <div class="columns content is-large has-background-info">
+    <div class="column">
+      <blockquote id="quote" class="title is-1">
+      <!-- Qoute goes here -->
+      </blockquote>
+    </div>
+  </div>  
     
+<!-- end of qoute indicator-->
+  <p id="continue" class="hidden title is-2">
+  Press any key to continue...
+  </p>
+</main>
+
 <!-- JS file -->  
 <script src="./assets/js/logic.js"></script> 
 </body>
