@@ -8,17 +8,18 @@ To-DO
 
 Today 
 
+- Change site banner when card page is loaded and change back when theme is selected.
+
+- ** Look in to tablet keyboard support and dark mode detection **
+
 - Breakpoint for smaller screens added that removes no scroll
   - test breakpoints for cards-- MAKE SURE THERE IS NO ISSUES WITH SCROLL 
 
 - progress bar NOT full width -- try 50%
 
-- Change replay button colour? 
-
 - Replay button is currently reloading the page back to the start screen. 
   - Change to load to card selection, or re-work homepage?  
 
-- ADD actual qoutes to array.
 
 
 NOTES

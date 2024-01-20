@@ -44,7 +44,6 @@ const nietzscheNormalMode = [
     "The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind.",
     "In individuals, insanity is rare; but in groups, parties, nations and epochs, it is the rule.",
     "No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone.",
-    "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.",
     "The advantage of a bad memory is that one enjoys several times the same good things for the first time.",
     "I am a forest, and a night of dark trees: but he who is not afraid of my darkness, will find banks full of roses under my cypresses.",
     "Every deep thinker is more afraid of being understood than of being misunderstood.",
