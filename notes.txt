@@ -8,21 +8,26 @@ To-DO
 
 Today 
 
-- Change site banner when card page is loaded and change back when theme is selected.
+- Make whole card clickable and count as a button click? 
+ - highlight when hovered over card 
+
+- Cards remain same height regardless of screen size
+
+- Organize images into banners and cards folders with images. 
+  - update img src in HTML/CSS/JS files if changed. 
 
 - ** Look in to tablet keyboard support and dark mode detection **
+ - Dark mode: text on cards has a visibility issue. 
 
 - Breakpoint for smaller screens added that removes no scroll
   - test breakpoints for cards-- MAKE SURE THERE IS NO ISSUES WITH SCROLL 
-
-- progress bar NOT full width -- try 50%
 
 - Replay button is currently reloading the page back to the start screen. 
   - Change to load to card selection, or re-work homepage?  
 
 
 
-NOTES
---------
+
+
 
 

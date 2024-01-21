@@ -17,9 +17,11 @@ document.onclick = function(event) {
    let target = event.target.id
    if(target === "start-btn"){
     homeBTNs.remove();//delete homeBTNs cointainer
+    document.getElementById("site-banner").src = "./assets/images/themeSelect.png"; //change site banner to theme banner 
     cards.classList.remove("hidden");//uhide qoute selection cards
    } else if (target === "nietzsche" || target === "shakespeare" || target === "mystery"){
      theme = arrays[target]; //set array selection
+     document.getElementById("site-banner").src = "./assets/images/banner2.png"; //change site banner back to main banner 
      themeSelect(theme);//pass value to function to set quotes
    }else if(target === "replay"){//replay button
      location.reload();//reload page -- resets values and returns to homepage
@@ -126,19 +128,14 @@ function restultsHTML(){
   h1.id = 'user-score'; 
   h1.className = 'title is-1 has-text-white';  
   h1.textContent = "Overall Accuracy: " + `${userResults}` + "%";
-  //let newLine = document.createElement('br');//create br tag (break)
   let button = document.createElement('button');//create button
   button.id = 'replay';
   button.className = 'button is-large is-responsive button is-link';
   button.textContent = 'Replay';
   parent.appendChild(h1);//add h1 to div
-  //parent.appendChild(newLine);//add br to div
   parent.appendChild(button);//add button to div
   document.body.appendChild(parent);//add div to the document
 }
-
-
-
 
 //arrays
 const arrays = {

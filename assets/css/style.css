@@ -73,6 +73,10 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   background-color: #1a1715;
 }
 
+.progress {
+  width: 90%;
+}
+
 .incorrect {
   color: red;
 }
