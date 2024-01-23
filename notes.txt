@@ -9,6 +9,11 @@ To-DO
 
 Today 
 
+- Test if space button is causing screen movement issue on main.html when typing.  
+  - TRY removing header and see if issue persists
+  - Also, Google preventing space key from adjusting screen position. 
+  - Firefox opening search with space key press preventing typing 
+
 - Cards remain same height regardless of screen size
 
 - ** Look in to tablet keyboard support and dark mode detection **
@@ -18,15 +23,12 @@ Today
 
 - Test if space button is causing screen movement issue on main.html when typing.  
 
-- Move cards.html btn listener to seperate JS file and import if needed
- - If this is done the btn value will need to be stored into a var and imported to be used in logic.js
-
 - Add 10 qoute limit to qoutes if more are added
 
 
-Notes 
 
-- for homepage re-add no scroll y || try overflow hidden again 
+
+
 
 
 

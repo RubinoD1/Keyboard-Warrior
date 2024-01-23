@@ -1,0 +1,5 @@
+/*Prevents Bulma defaults from creating a scrollbar*/
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }

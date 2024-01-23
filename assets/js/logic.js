@@ -11,16 +11,21 @@ let length = 0; //qoute length
 let accuracyScores = [];//array to hold accuracy values for qoutes to calculate overall total %
 let correct = 0;//tracks correct inputs
 
-//button event listeners
 document.onclick = function(event) {
-   let target = event.target.id
-if (target === "nietzsche" || target === "shakespeare" || target === "mystery"){
-     localStorage.setItem("theme", `${target}`);//save theme to local storage
-     window.location.assign("main.html");//load main.html page
-  }else if(target === "replay"){//replay button
-     localStorage.clear();//clear loacal storage -- NEEDED?
-     window.location.assign("cards.html");//load card.html page
-   }
+let target = event.target.id
+
+switch(target) {
+  case "nietzsche":
+  case "shakespeare":
+  case "mystery":
+   localStorage.setItem("theme", `${target}`);//save theme to local storage
+   window.location.assign("main.html");//load main.html page
+   break;
+  case "replay":
+   localStorage.clear();//clear loacal storage -- NEEDED?
+   window.location.assign("cards.html");//load card.html page
+   break;
+  }
 };
 
 //Keyboard input listener -- WILL NEED TO CHECK TABLET COMPATIBILITY
