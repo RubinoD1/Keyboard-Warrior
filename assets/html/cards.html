@@ -8,9 +8,9 @@
     </title>
     <!--CSS files -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/keyboard_favicon.svg"> 
+    <link rel="icon" type="image/x-icon" href="../images/favicon/keyboard_favicon.svg"> 
 </head>
 
 <body>
@@ -18,40 +18,33 @@
 <!-- Header -->
 <section class="hero is-small">
   <div class="hero-body">
-    <a href="./index.html">
+    <a href="/index.html">
      <figure id="banner">
-      <img src="./assets/images/banner2.png" alt="site banner">
+      <img id="site-banner" src="../images/site banners/themeSelect.png" alt="site banner">
      </figure> 
     </a>
   </div>
 </section>
 
-<!-- Homepage start button-->   
-<div id="home-btns" class="hero-body">
-  <button id="start-btn" class="button is-largebutton is-link">
-  Start
-  </button>
-</div>
-  
 <!--CARDS-->
 <!-- Shakespeare card -->
-<div id="cards" class="columns hidden">
+<div id="cards" class="columns">
   <div class="column card cards-outline">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="./assets/images/Shakespeare.jpeg" alt="William Shakespeare image">
+        <img src="../images/card images/Shakespeare.jpeg" alt="William Shakespeare image">
       </figure>
     </div>
-    <header class="card-header has-text-black">
+    <header class="card-header">
       <p class="card-header-title is-justify-content-center">
       William Shakespeare
       </p>
     </header>
-    <div class="card-content has-text-black">
+    <div class="card-content">
       <p class="title">
       “When words are scarce they are seldom spent in vain.”
       </p>
-      <p class="subtitle has-text-black">
+      <p class="subtitle">
       William Shakespeare
       </p>
     </div>
@@ -65,19 +58,19 @@
   <div class="column card cards-outline">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="./assets/images/nietzsche.jpg" alt="Friedrich Nietzsche image">
+        <img src="../images/card images/nietzsche.jpg" alt="Friedrich Nietzsche image">
       </figure>
     </div>
-    <header class="card-header has-text-black">
+    <header class="card-header">
       <p class="card-header-title is-justify-content-center">
       Friedrich Nietzsche
       </p>
     </header>
-    <div class="card-content has-text-black">
+    <div class="card-content">
       <p class="title">
       “If we possess our why of life we can put up with almost any how.”
       </p>
-      <p class="subtitle has-text-black">
+      <p class="subtitle">
       Friedrich Nietzsche
       </p>
     </div>
@@ -91,19 +84,19 @@
   <div class="column card cards-outline">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="./assets/images/mystery.jpg" alt="Mystery theme image">
+        <img src="../images/card images/mystery.jpg" alt="Mystery theme image">
       </figure>
     </div>
     <header class="card-header">
-      <p class="card-header-title is-justify-content-center has-text-black">
+      <p class="card-header-title is-justify-content-center">
       Mystery
       </p>
     </header>
-    <div class="card-content has-text-black">
+    <div class="card-content">
       <p class="title">
       “Without pain, without sacrifice, we would have nothing.”
       </p>
-      <p class="subtitle has-text-black">
+      <p class="subtitle">
       Fight Club
       </p>
     </div>
@@ -115,35 +108,9 @@
    </div>
 </div>
 
-<!-- Main content  -->
-<main id="qoute-parent" class="hidden">
-  <div class="columns content is-medium has-background-dark has-text-white">
-    <div id="accuracy" class="column">
-    Accuracy - -%
-    </div>
-    <div class="column">
-     <div id="qoutes-left">
-     Quotes Complete: -/-
-     </div>
-     <progress  id="progress-bar" class="progress is-primary" value="0" max="100">0%</progress>
-    </div>
-  </div>  
-    
-  <div class="columns content is-large has-background-info">
-    <div class="column">
-      <blockquote id="quote" class="title is-1">
-      <!-- Qoute is inserted here by the JS file -->
-      </blockquote>
-    </div>
-  </div>  
-    
-<!-- End of qoute indicator-->
-  <p id="continue" class="hidden title is-2">
-  Press any key to continue...
-  </p>
-</main>
+
 
 <!-- JS file -->  
-<script src="./assets/js/logic.js"></script> 
+<script type="module" src="../js/logic.js"></script> 
 </body>
 

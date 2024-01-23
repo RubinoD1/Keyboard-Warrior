@@ -1,20 +1,4 @@
-const nietzscheHardMode = [
-   //pg.280
-  "I walk among this people and I keep my eyes open: they do not forgive me that I do not envy their virtues. They bite at me because I say to them: small people need small virtues--and because I find it hard to accept that small people are needed.",
-  //pg.280 
-  "And they praise me, how could I go to sleep on their praise? Their praise is a belt of thorns to me: it scratches me even when I shake it off. And this too I have learned among them: he who gives praise poses as if he were giving back; in truth, however, he wants more gifts.",
-  //pg.291
-  "Alas, there are always only a few whose hearts long retain their courageous bearing and overbearing prankishness, and whose spirits also remain patient. The rest, however, are cowards. The rest--those are always by far the most, the commonplace, the superfluous, the all-too-many: all those are cowards.",
-  //online
-  "God is dead: but considering the state of the species Man is in, there will perhaps be caves, for ages yet, in which his shadow will be shown.",
-  "The creation of freedom for oneself and a sacred 'No' even to duty — for that, my brothers, the lion is needed.",
-  "I say unto you: one must still have chaos in oneself to be able to give birth to a dancing star. I say unto you: you still have chaos in yourselves.",
-  "A human being who strives for something great considers everyone he meets on his way either as a means or as a delay and obstacle — or as a temporary resting place.",
-  "Men of profound sadness betray themselves when they are happy: they have a way of embracing happiness as if they wanted to crush and suffocate it, from jealousy: alas, they know only too well that it will flee.",
-  ""
-];
-
-const nietzscheNormalMode = [
+const nietzsche = [
     //pg.290 --maybe add to hard mode (depends on qoutes that are added to each)
     "This doctrine, however, I give you, fool, as a parting present: where one can no longer love, there one should pass by.",
     //pg.318
@@ -92,7 +76,7 @@ const mystery = [
   "Taking a new step, uttering a new word, is what people fear most.",
   //Dune
   "Deep in the human unconscious is a pervasive need for a logical universe that makes sense, But the real universe is always one step beyond logic.",
-  "The mystery of life isn’t a problem to solve, but a reality to experience.",
+  "The mystery of life isn't a problem to solve, but a reality to experience.",
   "When law and duty are one, united by religion, you never become fully conscious, fully aware of yourself. You are always a little less than an individual.",
   "A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it.",
   "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.",
@@ -130,5 +114,37 @@ const mystery = [
   ""
 ];
 
-
+const shakespeare = [
+"Be not afraid of greatness. Some are born great, some achieve greatness, and others have greatness thrust upon them.",
+"Sweet are the uses of adversity which, like the toad, ugly and venomous, wears yet a precious jewel in his head.",
+"Our doubts are traitors and make us lose the good we oft might win by fearing to attempt.",
+"Give every man thy ear, but few thy voice.",
+"This above all; to thine own self be true.",
+"I wasted time, and now doth time waste me.",
+"The devil can cite Scripture for his purpose.",
+"Neither a borrower nor a lender be.",
+"Ambition should be made of sterner stuff.",
+"Talking isn't doing. It is a kind of good deed to say well; and yet words are not deeds.",
+"In time we hate that which we often fear.",
+"Boldness be my friend.",
+"When words are scarce they are seldom spent in vain.",
+"Reputation is an idle and most false imposition; oft got without merit, and lost without deserving.",
+"All the world's a stage, and all the men and women merely players. They have their exits and their entrances; and one man in his time plays many parts.",
+"All that glisters is not gold.",
+"Words are easy, like the wind; faithful friends are hard to find.",
+"Expectation is the root of all heartache.",
+"I like this place and could willingly waste my time in it.",
+"Better three hours too soon than a minute too late.",
+"Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.",
+"My tongue will tell the anger of my heart, or else my heart concealing it will break.",
+"Brevity is the soul of wit.",
+"Give sorrow words; the grief that does not speak knits up o-er wrought heart and bids it break.",
+"Look like the innocent flower, but be the serpent under it.",
+"O, beware, my lord, of jealousy; it is the green-ey'd monster, which doth mock the meat it feeds on.",
+"Be great in act, as you have been in thought.",
+"Self-love, my liege, is not so vile a sin, as self-neglecting.",
+"Doubt thou the stars are fire, doubt that the sun doth move. Doubt truth to be a liar, but never doubt I love.",
+"'I can see that he's not in your good books,' said the messenger. 'No, and if he were I would burn my library.'",
+""
+]
 //console.log(nietzscheHardMode[0], nietzscheNormalMode[0]);

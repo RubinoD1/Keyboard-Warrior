@@ -1,33 +1,32 @@
 To-DO 
 -------
-#3 Make arrays for quotes 
-  - import/export 
 #10 Readme file
 #11 Clean up code with comments and format (try prettier extension?)
 #12 Update GitHub page with proper info (tags, description, etc.)
+#13 Make a thanks for playing banner for results screen 
+#14 re-organize images into a site assets sub-folder within images
+#15 Have option on cards page to set the # of qoutes per game?
 
 Today 
 
-- Make whole card clickable and count as a button click? 
- - highlight when hovered over card 
-
 - Cards remain same height regardless of screen size
-
-- Organize images into banners and cards folders with images. 
-  - update img src in HTML/CSS/JS files if changed. 
 
 - ** Look in to tablet keyboard support and dark mode detection **
  - Dark mode: text on cards has a visibility issue. 
 
-- Breakpoint for smaller screens added that removes no scroll
-  - test breakpoints for cards-- MAKE SURE THERE IS NO ISSUES WITH SCROLL 
+- Breakpoint for smaller screens test
 
-- Replay button is currently reloading the page back to the start screen. 
-  - Change to load to card selection, or re-work homepage?  
+- Test if space button is causing screen movement issue on main.html when typing.  
+
+- Move cards.html btn listener to seperate JS file and import if needed
+ - If this is done the btn value will need to be stored into a var and imported to be used in logic.js
+
+- Add 10 qoute limit to qoutes if more are added
 
 
+Notes 
 
-
+- for homepage re-add no scroll y || try overflow hidden again 
 
 
 

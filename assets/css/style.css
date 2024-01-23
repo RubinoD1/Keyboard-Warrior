@@ -2,11 +2,6 @@ body {
   background-color: rgb(77 72 121);
 }
 
-html {/*Prevents Bulma defaults from creating a scrollbar*/
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
 .hidden {
   visibility: hidden;
 }
@@ -147,9 +142,3 @@ html {/*Prevents Bulma defaults from creating a scrollbar*/
   }
 }
 
-/* media breakpoints */
-@media screen and (max-width: 769px){
-  html {/*Prevents Bulma defaults from creating a scrollbar*/
-    overflow-y: scroll;
-  }
-}
