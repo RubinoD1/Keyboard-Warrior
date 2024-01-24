@@ -69,7 +69,6 @@ const mystery = [
   "Fear is a phoenix. You can watch it burn a thousand times and still it will return.",
   "Eddie discovered one of his childhood's great truths. Grownups are the real monsters, he thought.",
   "Men go to far greater lengths to avoid what they fear than to obtain what they desire.",
-  "A man that flies from his fear may find that he has only taken a shortcut to meet it.",
   "If you try to get rid of fear and anger without knowing their meaning, they will grow stronger and return.",
   "People are supposed to fear the unknown, but ignorance is bliss when knowledge is so damn frightening.",
   "The oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear of the unknown.",

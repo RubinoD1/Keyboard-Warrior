@@ -51,8 +51,7 @@ body {
 	animation-iteration-count: infinite;
 }
 
-#cards, #qoute-parent {
-  /*padding-top: 20px;  */
+#qoute-parent {
   height: 100vh;/*repeat condense*/
 }
 

@@ -21,8 +21,6 @@ Today
 
 - Breakpoint for smaller screens test
 
-- Test if space button is causing screen movement issue on main.html when typing.  
-
 - Add 10 qoute limit to qoutes if more are added
 
 

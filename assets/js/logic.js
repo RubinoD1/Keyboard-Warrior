@@ -11,6 +11,7 @@ let length = 0; //qoute length
 let accuracyScores = [];//array to hold accuracy values for qoutes to calculate overall total %
 let correct = 0;//tracks correct inputs
 
+//button event listener for cards and replay button
 document.onclick = function(event) {
 let target = event.target.id
 
@@ -18,6 +19,9 @@ switch(target) {
   case "nietzsche":
   case "shakespeare":
   case "mystery":
+  case "sontag":
+  case "churchill":
+  case "napeleon":  
    localStorage.setItem("theme", `${target}`);//save theme to local storage
    window.location.assign("main.html");//load main.html page
    break;
