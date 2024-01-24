@@ -118,42 +118,42 @@ export const arrays = {
     ],
 
     camus: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "You will never be happy if you continue to search for what happiness consists of. You will never live if you are looking for the meaning of life.",
+      "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+      "Nobody realizes that some people expend tremendous energy merely to be normal.",
+      "Fiction is the lie through which we tell the truth.",
+      "Real generosity towards the future lies in giving all to the present.",
+      "To be happy, we must not be too concerned with others.",
+      "In order to understand the world, one has to turn away from it on occasion.",
+      "Seeking what is true is not seeking what is desirable.",
+      "The literal meaning of life is whatever you're doing that prevents you from killing yourself.",
+      "Idleness is fatal only to the mediocre."
     ],
 
     tolstoy: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Everyone thinks of changing the world, but no one thinks of changing himself.",
+      "All happy families are alike; each unhappy family is unhappy in its own way.",
+      "If you look for perfection, you'll never be content.",
+      "It is amazing how complete is the delusion that beauty is goodness.",
+      "We can know only that we know nothing. And that is the highest degree of human wisdom.",
+      "Rummaging in our souls, we often dig up something that ought to have lain there unnoticed.",
+      "When you love someone, you love the person as they are, and not as you'd like them to be.",
+      "Wrong does not cease to be wrong because the majority share in it.",
+      "If everyone fought for their own convictions there would be no war.",
+      "Happiness does not depend on outward things, but on the way we see them."
     ],
 
     jung: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.",
+      "Everything that irritates us about others can lead us to an understanding of ourselves.",
+      "Your visions will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.",
+      "I am not what happened to me, I am what I choose to become.",
+      "You are what you do, not what you say you'll do.",
+      "Knowing your own darkness is the best method for dealing with the darknesses of other people.",
+      "The pendulum of the mind oscillates between sense and nonsense, not between right and wrong.",
+      "The privilege of a lifetime is to become who you truly are.",
+      "The most terrifying thing is to accept oneself completely.",
+      "Mistakes are, after all, the foundations of truth, and if a man does not know what a thing is, it is at least an increase in knowledge if he knows what it is not."
     ],
   }
   
