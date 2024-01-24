@@ -2,9 +2,7 @@ To-DO
 -------
 #10 Readme file
 #11 Clean up code with comments and format (try prettier extension?)
-#12 Update GitHub page with proper info (tags, description, etc.)
 #13 Make a thanks for playing banner for results screen 
-#14 re-organize images into a site assets sub-folder within images
 #15 Have option on cards page to set the # of qoutes per game?
 
 Today 

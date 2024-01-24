@@ -6,15 +6,22 @@ Github repo: https://github.com/RubinoD1/Keyboard-Warrior
 
 Live page:
 
-## Introduction
-What is Keybaord Warrior?
+## What is Keybaord Warrior?
 
-Keyboard Warrior is a JavaScript built typing app. 
+Keyboard Warrior is a JavaScript built typing app. It cointains 12 selectable themes, each with a set of 10 randomized qoutes. The themes are mainly centered around literature, philosophy, and historical figures. 
+
+An accuracy percentage is scored per qoute with a total percentage being given at the completion of the tenth qoute.  
 
 ## More Info 
 
 ## Screenshots
 ![Homepage](/assets/images/screenshots/homepage.png)
+
+![Theme Select Page](/assets/images/screenshots/theme%20select%20page.png)
+
+![Typing UI](/assets/images/screenshots/typing%20ui.png)
+
+![Results Page](/assets/images/screenshots/theme%20select%20page.png)
 
 
 

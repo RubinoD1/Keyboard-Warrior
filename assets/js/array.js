@@ -158,4 +158,3 @@ export const arrays = {
   }
   
   
-  //console.log(arrays.mystery.length);
