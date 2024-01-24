@@ -76,7 +76,85 @@ export const arrays = {
       "It requires more courage to suffer than to die.",
       "I am surrounded by priests who repeat incessantly that their kingdom is not of this world, and yet they lay hands on everything they can get.",
       "One is more certain to influence men, to produce more effect on them, by absurdities than by sensible ideas."
-    ]
+    ],
+
+    beauvoir: [
+      "To lose confidence in one's body is to lose confidence in oneself.",
+      "What an odd thing a diary is: the things you omit are more important than those you put in.",
+      "I tore myself away from the safe comfort of certainties through my love for truth - and truth rewarded me.",
+      "If you live long enough, you'll see that every victory turns into a defeat.",
+      "Capabilities are clearly manifested only when they have been realized.",
+      "To catch a husband is an art; to hold him is a job.",
+      "To abstain from politics is in itself a political attitude.",
+      "And without a doubt it is more comfortable to endure blind bondage than to work for one's liberation; the dead, too, are better suited to the earth than the living.",
+      "Self-consciousness is not knowledge but a story one tells about oneself.",
+      "Literature takes its revenge on reality by making it the slave of fiction."
+    ],
+
+    lawrence: [
+      "We've got to live, no matter how many skies have fallen.",
+      "Perhaps only people who are capable of real togetherness have that look of being alone in the universe. The others have a certain stickiness, they stick to the mass.",
+      "Life is ours to be spent, not to be saved.",
+      "Instead of chopping yourself down to fit the world, chop the world down to fit yourself.",
+      "Obscenity only comes in when the mind despises and fears the body, and the body hates and resists the mind.",
+      "Never was an age more sentimental, more devoid of real feeling, more exaggerated in false feeling, than our own.",
+      "What the eye doesn't see and the mind doesn't know, doesn't exist.",
+      "When I read Shakespeare I am struck with wonder that such trivial people should muse and thunder in such lovely language.",
+      "One could laugh at the world better if it didn't mix tender kindliness with its brutality.",
+      "For to desire is better than to possess, the finality of the end was dreaded as deeply as it was desired."
+    ],
+
+    tolkein: [
+      "Not all those who wander are lost.",
+      "If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.",
+      "I will not say: do not weep; for not all tears are an evil.",
+      "It's the job that's never started as takes longest to finish.",
+      "There is nothing like looking, if you want to find something. You certainly usually find something, if you look, but it is not always quite the something you were after.",
+      "A man that flies from his fear may find that he has only taken a short cut to meet it.",
+      "I warn you, if you bore me, I shall take my revenge.",
+      "Short cuts make long delays.",
+      "He that breaks a thing to find out what it is has left the path of wisdom.",
+      "Fair speech may hide a foul heart."
+    ],
+
+    camus: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+
+    tolstoy: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+
+    jung: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   }
   
   

@@ -21,7 +21,10 @@ switch(target) {
   case "mystery":
   case "sontag":
   case "churchill":
-  case "napeleon":  
+  case "napeleon":
+  case "beauvoir":
+  case "lawrence":
+  case "tolkein":  
    localStorage.setItem("theme", `${target}`);//save theme to local storage
    window.location.assign("main.html");//load main.html page
    break;
