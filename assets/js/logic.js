@@ -40,7 +40,9 @@ switch(target) {
 
 //Keyboard input listener -- WILL NEED TO CHECK TABLET COMPATIBILITY
 document.addEventListener('keydown', (event) => {
-    if (position < length){ 
+  event.preventDefault();//prevents space key from moving screen position and accidental ctl + f presses
+  
+  if (position < length){ 
       inputFilter(event);
   } else if (position >= length) {//Trigger next qoute if avaliable and array not at last #
       arrayPosition = arrayPosition + 1;//increase arrayPosition 
@@ -133,6 +135,7 @@ function restultsHTML(){
   let sum = 0;// create a variable for the sum and initialize it
   for (let i = 0; i < accuracyScores.length; i++ ) {// iterate over each item in the array
     sum += accuracyScores[i];
+    break;
   }
   let outOf = theme.length *100;//array length *100 to get total score value
   let userResults = Math.trunc(sum/outOf*100); //calculate user overall accuracy%

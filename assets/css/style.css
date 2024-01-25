@@ -42,7 +42,7 @@ body {
   display: grid;
   justify-content: center;/* shared reduce to one class */
   padding-top: 100px;
-  padding-bottom: 900px; /*CHANGE? to cover screen with bg-color */
+  padding-bottom: 700px; /*CHANGE? to cover screen with bg-color */
 }
 
 #continue{

@@ -19,7 +19,9 @@ Today
 
 - Breakpoint for smaller screens test
 
-- Add 10 qoute limit to qoutes if more are added
+
+- Re-add header to results screen and figure out how to prevent search bar from opening in browsers. 
+ - preferably re-add header to main.html and prevent space bar from moving page. 
 
 
 

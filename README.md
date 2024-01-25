@@ -1,3 +1,4 @@
+# Keyboard Warrior
 ![Site banner](../keyboard%20warrior/assets/images/readmeBanner.png)
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -21,7 +22,7 @@ An accuracy percentage is scored per qoute with a total percentage being given a
 
 ![Typing UI](/assets/images/screenshots/typing%20ui.png)
 
-![Results Page](/assets/images/screenshots/theme%20select%20page.png)
+![Results Page](/assets/images/screenshots/results%20page.png)
 
 
 
