@@ -4,7 +4,7 @@
 
 Github repo: https://github.com/RubinoD1/Keyboard-Warrior
 
-Live page:
+Live page: https://rubinod1.github.io/Keyboard-Warrior/
 
 ## What is Keybaord Warrior?
 
