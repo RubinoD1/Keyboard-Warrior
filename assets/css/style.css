@@ -8,19 +8,25 @@ body {
 
 #banner {
   display: flex;
-  justify-content: center;/* shared reduce to one class */
   background-color: #8681a5;
 }
 
 /* home btns cointainer */
 #home-btns{
   display: flex;
-  justify-content: center;/* shared reduce to one class */
   background-image: url(../images/keyboardBG.jpg);
   background-size: cover; 
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;/*repeat condense*/
+  
+}
+
+.j-center{
+  justify-content: center;
+}
+
+.height {
+  height: 100vh;
 }
 
 #start-btn{
@@ -40,19 +46,14 @@ body {
 
 #results{
   display: grid;
-  justify-content: center;/* shared reduce to one class */
   padding-top: 100px;
-  padding-bottom: 700px; /*CHANGE? to cover screen with bg-color */
+  padding-bottom: 700px; 
 }
 
 #continue{
   text-align:center;
   animation: rainbow 2.5s linear;
 	animation-iteration-count: infinite;
-}
-
-#qoute-parent {
-  height: 100vh;/*repeat condense*/
 }
 
 .card-header-title{
