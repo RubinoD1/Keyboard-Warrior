@@ -1,14 +1,14 @@
-import {arrays} from './array.js'//import array cointaining qoutes
+import {arrays} from './array.js'//import array cointaining quotes
 
-const qouteParent = document.getElementById("qoute-parent");
+const quoteParent = document.getElementById("quote-parent");
 const quote = document.getElementById("quote");//main content
 const accuracyHTML = document.getElementById("accuracy");
 
 let theme = undefined;
 let arrayPosition = 0;//0 to start the index at the beginning 
-let position = 0; //tracks current qoute position 
-let length = 0; //qoute length 
-let accuracyScores = [];//array to hold accuracy values for qoutes to calculate overall total %
+let position = 0; //tracks current quote position 
+let length = 0; //quote length 
+let accuracyScores = [];//array to hold accuracy values for quotes to calculate overall total %
 let correct = 0;//tracks correct inputs
 
 //button event listener for cards and replay button
@@ -44,21 +44,21 @@ document.addEventListener('keydown', (event) => {
   if (position < length){ 
       inputFilter(event);
   } 
-  else if (position >= length) {//Trigger next qoute if avaliable and array not at last #
+  else if (position >= length) {//Trigger next quote if avaliable and array not at last #
       arrayPosition = arrayPosition + 1;//increase arrayPosition 
       accuracyScores.push(Math.trunc(correct/position*100));//push accuracy value to total array  
-      accuracyHTML.innerHTML = "Accuracy: --%";//reset accuracy percentage HTML for next qoute
+      accuracyHTML.innerHTML = "Accuracy: --%";//reset accuracy percentage HTML for next quote
     if(arrayPosition < theme.length){
       let progress = Math.trunc(arrayPosition/theme.length*100);//increase progress bar 
       document.getElementById("progress-bar").setAttribute("value", `${progress}`);
       //Update qoutes left HTML
-      document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
-      position = 0;//reset qoute position
+      document.getElementById("quotes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
+      position = 0;//reset quote position
       correct = 0;//reset correct inputs
-      quote.innerHTML= ""//clear qoute inner HTML
+      quote.innerHTML= ""//clear quote inner HTML
       populateText(theme);//call function to set next quote
     } else if(arrayPosition >= theme.length){
-      qouteParent.remove();//remove qouteParent div
+      quoteParent.remove();//remove quoteParent div
       restultsHTML();
     }
   } 
@@ -72,7 +72,7 @@ function checkStorage() {
   }
 }
 
-//function for selecting qoutes, randomizing and setting str value for starting qoute
+//function for selecting quotes, randomizing and setting str value for starting quote
 function themeSelect(theme){
   let lastElement; //used in the iteration process to hold the last element in the array 
   
@@ -82,10 +82,10 @@ function themeSelect(theme){
       theme[i] = theme[rand];//randomly choose a array element
       theme[rand] = lastElement;//put the randomly slected array element in the place of the last index element 
     }
-  qouteParent.classList.remove("hidden");//uhide qoute selection cards
-  //Update qoutes left HTML
-  document.getElementById("qoutes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
-  populateText(theme);  //call qoute function to set first qoute
+  quoteParent.classList.remove("hidden");//uhide quote selection cards
+  //Update quotes left HTML
+  document.getElementById("quotes-left").innerHTML = "Quotes Complete: " + arrayPosition + " / " + theme.length;
+  populateText(theme);  //call quote function to set first quote
 }
 
 function populateText(theme){
@@ -121,11 +121,11 @@ function inputFilter(event){
       document.getElementById("character" + `${position-1}`).classList.remove("border", "blink");
   } 
   
-  //update border position if position is not equal to length and qoute.innerHTML not ""
+  //update border position if position is not equal to length and quote.innerHTML not ""
   if (position !== length && quote.innerHTML !== ""){
     document.getElementById("character" + `${position}`).classList.add("border", "blink");
   } 
-  else if (position === length && qouteParent.innerHTML !== ""){//if at last character of qoute
+  else if (position === length && quoteParent.innerHTML !== ""){//if at last character of quote
     document.getElementById("continue").classList.remove("hidden");//unhide press any key to continue 
   }
 }
