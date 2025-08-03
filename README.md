@@ -12,6 +12,10 @@ Keyboard Warrior is a JavaScript built typing app. It cointains 12 selectable th
 
 An accuracy percentage is scored per quote with a total percentage being given at the completion of the tenth quote.  
 
+<b>
+Keyboard Warrior does not have virtual keyboard support implemented. The app was built with a focus on inputs from a physical keyboard.  
+</b>
+
 ## Screenshots
 ![Homepage](/assets/images/screenshots/homepage.png)
 

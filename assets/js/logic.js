@@ -130,16 +130,21 @@ function inputFilter(event){
   }
 }
 
+
+//calculate average of user score for the results screen
+function getAverage(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum / array.length;
+}
+
 //calculate user score and make results div 
 function restultsHTML(){
-  //calculate user score
-  let sum = 0;// create a variable for the sum and initialize it
-  for (let i = 0; i < accuracyScores.length; i++ ) {// iterate over each item in the array
-    sum += accuracyScores[i];
-    break;
-  }
-  let outOf = theme.length *100;//array length *100 to get total score value
-  let userResults = Math.trunc(sum/outOf*100); //calculate user overall accuracy%
+
+  let average = getAverage(accuracyScores); //calculate user score
+  let userResults = Math.trunc(average); //Makes user score a whole number
 
   //make results div 
   let parent = document.createElement('div');//parent div 
