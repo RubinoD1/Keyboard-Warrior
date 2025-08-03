@@ -13,21 +13,19 @@ let correct = 0;//tracks correct inputs
 
 //button event listener for cards and replay button
 document.onclick = function(event) {
- let target = event.target.id
- switch(target) {//card btns
-   case "nietzsche":
-   case "shakespeare":
-   case "mystery":
-   case "sontag":
-   case "churchill":
-   case "napeleon":
-   case "beauvoir":
-   case "lawrence":
-   case "tolkein":
-   case "camus":
-   case "tolstoy":
-   case "jung":  
-    localStorage.setItem("theme", `${target}`);//save theme to local storage
+ const arrayThemes = Object.getOwnPropertyNames(arrays); //theme property names from array 
+ let target = event.target.id; 
+ 
+ //check if target matches a theme property name 
+ if (arrayThemes.includes(target) === true){
+  target = "theme";
+ }else {
+  //do nothing
+ }
+
+ switch(target) {
+   case "theme": //card theme btn
+    localStorage.setItem("theme", `${event.target.id}`);//save theme to local storage
     window.location.assign("main.html");//load main.html page
     break;
    case "replay"://replay btn
