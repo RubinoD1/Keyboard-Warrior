@@ -1,4 +1,7 @@
-![Site banner](/assets/images/readmeBanner.png)
+<!-- Site Banner -->
+<p align="center">
+  <img src="./assets/images/readmeBanner.png" />
+</p>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
@@ -8,7 +11,7 @@ Live page: https://rubinod1.github.io/Keyboard-Warrior/
 
 ## What is Keybaord Warrior?
 
-Keyboard Warrior is a JavaScript built typing app. It cointains 12 selectable themes, each with a set of 10 randomized quotes. The themes are mainly centered around literature, philosophy, and historical figures. 
+Keyboard Warrior is a JavaScript built typing app. It cointains 24 selectable themes, each with a set of 10 randomized quotes. The themes are mainly centered around literature, philosophy, and historical figures. 
 
 An accuracy percentage is scored per quote with a total percentage being given at the completion of the tenth quote.  
 

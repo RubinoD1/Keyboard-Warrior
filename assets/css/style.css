@@ -44,6 +44,11 @@ body {
   transition: 0.7s;
 }
 
+/* card select button */
+.button.is-info {
+    background-color: #205a8b;
+}
+
 #results{
   display: grid;
   padding-top: 100px;
